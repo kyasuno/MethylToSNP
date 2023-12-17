@@ -20,10 +20,13 @@ Authors@R: c(
            email = "elnitski@nih.gov",
            comment = c(ORCID = "YOUR-ORCID-ID")))
 Depends:
-    R (>= 3.3.1),
-    Ckmeans.1d.dp
+    R (>= 4.3.2),
+    Ckmeans.1d.dp,
 Imports:
     Ckmeans.1d.dp,
+    tidyverse,
+    matrixStats,
+    ggpubr
 Suggests:
     minfi,
     minfiData,
@@ -37,4 +40,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/elnitskilab/MethylToSNP
 BugReports: https://github.com/elnitskilab/MethylToSNP/issues
-RoxygenNote: 7.0.2
+RoxygenNote: 7.2.3
