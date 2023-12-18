@@ -206,13 +206,11 @@ MethylToSNP <- function(data, min.obs = 50, gap.ratio = 0.75, gap.sum.ratio = 0.
   ###
   # Summary
   #
-  if(verbose){
-    if (length(potentialSNPs) > 0 ){
-      message("[MethylToSNP] Number of potential SNPs found: ",length(potentialSNPs))
-    } else{
-      warning("[MethylToSNP]  No potential SNPs found. NULL value is returned.")
-      return(NULL)
-    }
+  if (length(potentialSNPs) > 0 ){
+    message("[MethylToSNP] Number of potential SNPs found: ",length(potentialSNPs))
+  } else{
+    warning("[MethylToSNP]  No potential SNPs found. NULL value is returned.")
+    return(NULL)
   }
   ##########
   # STEP 2.
